@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./app.js"></script>
+    <link rel="stylesheet" href="./app.css">
+    <script>
+        const PUSH = {
+            txt : "orem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quidem porro accusamus eum perspiciatis harum hic illum culpa reprehenderit neque! Tempora, dolor. Ipsa, quidem in. Tempora voluptas maxime sit accusamus."
+        }
+
+    </script>
+</head>
+<style>
+    .Header{
+        --height: 100px;
+    }
+   
+</style>
+<body>
+    <s-header class="Header">
+        <div slot="icon">ma super icon</div>
+        <ul slot="tabs">
+            <li>Tab One</li>
+            <li>Tab Two</li>
+            <li>Tab Three</li>
+        </ul>
+        <!-- <div slot="toggle">
+            <div slot="open">|||</div>
+            <div slot="close">&times;</div>
+        </div> -->
+    </s-header>
+
+   <div class="container">
+    push
+        <s-push></s-push>
+
+        <s-push 
+        img="https://images.unsplash.com/photo-1445207966278-0a0a65a2047b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YnJlc3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        alt="ma belle image"></s-push>
+
+        <s-push 
+        link="http://www.google.com"
+        img="https://images.unsplash.com/photo-1445207966278-0a0a65a2047b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YnJlc3R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        alt="ma belle image"
+        title="Mon super titre d'article"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum quidem porro accusamus eum perspiciatis harum hic illum culpa reprehenderit neque! Tempora, dolor. Ipsa, quidem in. Tempora voluptas maxime sit accusamus.">
+        </s-push>
+
+    
+        
+        <h1>Simple web component librairy</h1>
+        <s-anim-text>super texte</s-anim-text>
+        <s-anim-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et tempore adipisci dolores sint libero eius aut porro rerum beatae aspernatur doloribus vitae, facere consequuntur ipsum amet delectus ipsa praesentium.</s-anim-text>
+        <br/>
+        <br/>
+        <s-button></s-button>
+        <s-button>Valider</s-button>
+        <s-button color="#7db5f0">Valider</s-button>
+        <s-button iconClassName="hello" color="#4fa66e">Valider</s-button>
+    </div>
+
+</body>
+
+</html>
